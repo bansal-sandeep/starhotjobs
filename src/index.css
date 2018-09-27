@@ -34,6 +34,31 @@ body {
 }
 
 /* -------------------------------------------------------------------------- */
+/* Typography */
+/* -------------------------------------------------------------------------- */
+p {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: var(--letter-spacing);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Placeholder style override */
+/* -------------------------------------------------------------------------- */
+::-webkit-input-placeholder {
+  font-size: 15px !important;
+  font-weight: 200;
+}
+:-moz-placeholder {
+  font-size: 15px !important;
+  font-weight: 200;
+}
+::-moz-placeholder {
+  font-size: 15px !important;
+  font-weight: 200;
+}
+
+/* -------------------------------------------------------------------------- */
 /* Header */
 /* -------------------------------------------------------------------------- */
 .navbar {
@@ -53,6 +78,60 @@ body {
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing);
 }
+
+/* -------------------------------------------------------------------------- */
+/* Hero Component */
+/* -------------------------------------------------------------------------- */
+.hero {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url('./assets/hero.jpeg');
+  background-position: center;
+  background-size: cover;
+  min-height: 70vh;
+  margin-bottom: 30px;
+}
+.hero input {
+  padding: 25px 0px 25px 10px;
+}
+.hero .row {
+  padding-top: 70px;
+}
+.hero h1 {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  color: #000000;
+}
+.hero h3 {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+  margin-bottom: 20px;
+}
+.hero p {
+  margin-top: 20px;
+}
+.hero span {
+  font-size: 20px;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  padding-right: 20px;
+
+  cursor: pointer;
+}
+.hero button {
+  background-color: #11af22;
+  padding: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+}
+
 /* -------------------------------------------------------------------------- */
 /* Footer */
 /* -------------------------------------------------------------------------- */
